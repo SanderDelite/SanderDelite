@@ -3,32 +3,35 @@
 * Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-//
 // Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    // Activate Bootstrap scrollspy on the main nav element
+    // Проверка на наличие элемента sideNav
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
             offset: 74,
         });
-    };
+    }
 
-    // Collapse responsive navbar when toggler is visible
+    // Проверка на наличие элемента navbarToggler
     const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
+    if (navbarToggler) {
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        
+        // Для каждого элемента меню
+        responsiveNavItems.forEach(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                // Закрытие меню при нажатии, если меню отображается на мобильном устройстве
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
         });
-    });
+    }
 
 });
