@@ -13,20 +13,25 @@
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Перемикання навігації">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Про мене</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Досвід</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Освіта</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Навички</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Інтереси</a></li>
-                </ul>
+            <div class="container">
+                <!-- Language Switch Button -->
+                <button id="languageSwitchButton" class="btn btn-light" onclick="switchLanguage()">Переключити на англійську</button>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Про мене</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Досвід</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Освіта</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Навички</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Інтереси</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
         <div class="container-fluid p-0">
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
@@ -43,89 +48,88 @@
                     </div>
                 </div>
             </section>
+
             <hr class="m-0" />
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Досвід</h2>
+                    <h2 class="mb-5">Досвід роботи</h2>
+                    
+                    <!-- Work Experience 1 -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Менеджер з продажів</h3>
-                            <div class="subheading mb-3">Компанія: LEADEX.PRO</div>
-                            <p>
-                                - Проведення діалогів з потенційними клієнтами<br>
-                                - Обробка заперечень<br>
-                                - Робота з холодними дзвінками<br>
-                                - Ведення документації замовника<br>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Червень 2017 - Лютий 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Продавець</h3>
+                            <h3 class="mb-0">Асистент з продажу</h3>
                             <div class="subheading mb-3">Компанія: Good Beer</div>
+                            <div><b>Вересень 2023 – Теперішній час | Вінниця, Україна</b></div>
                             <p>
-                                - Обслуговування клієнтів та продаж товарів<br>
-                                - Консультування клієнтів та рекомендації (Customer Consulting & Upselling)<br>
+                                - Обслуговування клієнтів та продажі продукції<br>
+                                - Консультування клієнтів і рекомендації (консультування та upselling)<br>
                                 - Робота з CRM та операційними системами<br>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Вересень 2023 – теперішній час</span></div>
                     </div>
+
+                    <!-- Work Experience 2 -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Продавець</h3>
-                            <div class="subheading mb-3">Компанія: Домашній маркет</div>
+                            <h3 class="mb-0">Асистент з продажу</h3>
+                            <div class="subheading mb-3">Компанія: Domashniy Market</div>
+                            <div><b>Жовтень 2020 – Теперішній час | Вінниця, Україна</b></div>
                             <p>
                                 - Продажі та консультування клієнтів<br>
-                                - Управління CRM-системою<br>
+                                - Робота з CRM-системою<br>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Жовтень 2020 – теперішній час</span></div>
                     </div>
+
+                    <!-- Work Experience 3 -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Помічник Sales Manager</h3>
+                            <h3 class="mb-0">Асистент з продажу</h3>
                             <div class="subheading mb-3">Компанія: Grand Car</div>
+                            <div><b>Березень 2023 – Червень 2023 | Вінниця, Україна</b></div>
                             <p>
-                                - Обробка заявок та взаємодія з клієнтами<br>
-                                - Базові знання автомобільного ринку США та України<br>
+                                - Обробка запитів та взаємодія з клієнтами<br>
+                                - Основні знання ринку авто США та України<br>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Березень 2023 – Червень 2023</span></div>
                     </div>
+
+                    <!-- Work Experience 4 -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Sales Manager</h3>
+                            <h3 class="mb-0">Менеджер з продажу</h3>
                             <div class="subheading mb-3">Компанія: Grand Car</div>
+                            <div><b>Січень 2023 – Березень 2023 | Вінниця, Україна</b></div>
                             <p>
                                 - Залучення клієнтів та консультування<br>
-                                - Обробка вхідних заявок, активний пошук нових клієнтів<br>
+                                - Обробка вхідних запитів, активний пошук нових клієнтів<br>
                                 - Робота з аукціонами Copart, IAAI, Manheim<br>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Січень 2023 – Березень 2023</span></div>
                     </div>
+
+                    <!-- Work Experience 5 -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Manager of Sales</h3>
+                            <h3 class="mb-0">Менеджер з продажу</h3>
                             <div class="subheading mb-3">Компанія: Lidex.pro</div>
+                            <div><b>Червень 2017 – Серпень 2019 | Вінниця, Україна</b></div>
                             <p>
                                 - Робота з CRM-системами (Bitrix24, AmoCRM, HubSpot)<br>
                                 - Холодні та теплі продажі (Cold & Warm Sales)<br>
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Червень 2017 – Серпень 2019</span></div>
                     </div>
                 </div>
             </section>
+
             <hr class="m-0" />
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Освіта</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Донецький Національний Університет ім. Василя Стуса</h3>
+                            <h3 class="mb-0">Донецький національний університет</h3>
                             <div class="subheading mb-3">Бакалавр</div>
                             <div><b>Екологія та охорона навколишнього середовища</b></div>
                         </div>
@@ -133,12 +137,13 @@
                     </div>
                 </div>
             </section>
+
             <hr class="m-0" />
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Навички</h2>
                     <ul>
-                        <li>Установлення делових контактів</li>
+                        <li>Налагодження ділових контактів</li>
                         <li>Підтримка клієнтів</li>
                         <li>CRM-системи (Bitrix24, AmoCRM, HubSpot)</li>
                         <li>Продажі (B2B, B2C)</li>
@@ -147,17 +152,25 @@
                     </ul>
                 </div>
             </section>
+
             <hr class="m-0" />
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Інтереси</h2>
                     <p>
-                        Читання книг із соціальної психології<br>
-                        Вивчення нових напрямків для особистісного росту<br>
-                        Проходження курсів з FrontEnd-розробки
+                        Читання книг з соціальної психології<br>
+                        Опанування нових напрямків для особистого зростання<br>
+                        Курси FrontEnd-розробки
                     </p>
                 </div>
             </section>
+
         </div>
+
+        <script>
+            function switchLanguage() {
+                window.location.href = 'index.html';  // Link to the English version
+            }
+        </script>
     </body>
 </html>
